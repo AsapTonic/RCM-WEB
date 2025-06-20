@@ -35,6 +35,11 @@ export default function ComingSoonPage() {
       {/* Main Content Container */}
       <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl w-full text-center space-y-8">
+          {/* Decorative Element */}
+          <div className="flex justify-center">
+            <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-blue-500 rounded-full"></div>
+          </div>
+
           {/* Coming Soon Header */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-800 tracking-tight">
@@ -43,8 +48,8 @@ export default function ComingSoonPage() {
 
             {/* Service Name */}
             <div className="space-y-2">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-indigo-600">
-                Simple Billboards Sites
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-red-600">
+                Rock Vision Media{" "}
               </h2>
 
               {/* Tagline */}
@@ -56,7 +61,7 @@ export default function ComingSoonPage() {
 
           {/* Decorative Element */}
           <div className="flex justify-center">
-            <div className="w-24 h-1 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-blue-500 rounded-full"></div>
           </div>
 
           {/* Email Subscription Form */}
@@ -81,7 +86,7 @@ export default function ComingSoonPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting || !email}
-                  className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center"
+                  className="w-full bg-red-600 hover:bg-red-700 disabled:bg-red-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center"
                 >
                   {isSubmitting ? (
                     <>
