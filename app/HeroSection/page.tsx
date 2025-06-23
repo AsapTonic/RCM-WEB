@@ -455,13 +455,7 @@ export default function LandingPage() {
                   href="#"
                   className="rounded-md bg-white px-6 py-3 text-base font-semibold text-green-600 shadow-sm hover:bg-gray-50 transition-colors"
                 >
-                  Start free trial
-                </a>
-                <a
-                  href="#"
-                  className="rounded-md border border-white px-6 py-3 text-base font-semibold text-white hover:bg-white hover:text-indigo-600 transition-colors"
-                >
-                  Schedule demo
+                  Start your ad
                 </a>
               </div>
             </div>
