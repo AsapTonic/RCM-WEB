@@ -8,42 +8,42 @@ export default function LandingPage() {
   const services = [
     {
       id: 1,
-      title: "Data Analytics",
+      title: "Billboard Location Targeting",
       description:
-        "Transform raw data into actionable insights with our advanced analytics platform. Get real-time reporting and predictive analysis.",
-      icon: "📊",
+        "Place your ads where they matter most — near highways, local hotspots, and community centers. Choose locations based on your audience and budget.",
+      icon: "🗺️",
       color: "from-blue-500 to-cyan-500",
     },
     {
       id: 2,
-      title: "Business Intelligence",
+      title: "Creative Design Support",
       description:
-        "Make informed decisions with comprehensive business intelligence tools and customizable dashboards.",
-      icon: "🧠",
+        "Get professionally designed billboard graphics that grab attention and align with your brand. We help you turn concepts into impactful visuals.",
+      icon: "🎨",
       color: "from-purple-500 to-pink-500",
     },
     {
       id: 3,
-      title: "API Integration",
+      title: "Ad Rotation & Scheduling",
       description:
-        "Seamlessly connect your existing systems with our robust API infrastructure and documentation.",
-      icon: "🔗",
+        "Plan your campaigns with flexible scheduling options. Rotate your message by time of day, event, or promotion to maximize reach.",
+      icon: "🔁",
       color: "from-green-500 to-emerald-500",
     },
     {
       id: 4,
-      title: "Cloud Solutions",
+      title: "Performance Reporting",
       description:
-        "Scale your business with secure, reliable cloud infrastructure designed for modern enterprises.",
-      icon: "☁️",
+        "Track impressions, engagement, and estimated traffic with our reporting tools. Get insights on how your billboard ads are performing.",
+      icon: "📊",
       color: "from-orange-500 to-red-500",
     },
     {
       id: 5,
-      title: "Machine Learning",
+      title: "Local Campaigns",
       description:
-        "Leverage AI and machine learning to automate processes and discover hidden patterns in your data.",
-      icon: "🤖",
+        "Whether you're targeting a single neighborhood or launching a regional campaign, we help you scale your reach effectively.",
+      icon: "📍",
       color: "from-indigo-500 to-purple-500",
     },
     {
@@ -65,13 +65,9 @@ export default function LandingPage() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#" className="h-16 w-auto">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <img className="h-25 w-auto" src="RockLogo-01.png" alt="" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -102,19 +98,7 @@ export default function LandingPage() {
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Product
-            </a>
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Features
-            </a>
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Marketplace
+              Locations
             </a>
             <a
               href="#services"
@@ -126,17 +110,10 @@ export default function LandingPage() {
               href="#"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Company
+              Contact Us
             </a>
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
 
         {/* Mobile menu */}
@@ -226,26 +203,31 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div
+        className="relative isolate px-6 pt-14 lg:px-8 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/your-background.jpg')", // 👈 replace with your actual image filename
+        }}
+      >
+        {" "}
         {/* Background gradient top */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
           <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#088134] to-[#9ddc5e] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             style={{
               clipPath:
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
             }}
           ></div>
         </div>
-
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.
-              <a href="#" className="font-semibold text-indigo-600">
+              Announcing our newest billboard locations in high-traffic areas.
+              <a href="#" className="font-semibold text-green-600">
                 <span className="absolute inset-0" aria-hidden="true"></span>
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -253,16 +235,17 @@ export default function LandingPage() {
           </div>
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
-              Data to enrich your online business
+              Billboards that grow your local business
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+              We help you reach thousands daily with eye-catching outdoor
+              advertising in your neighborhood. Drive brand awareness and
+              real-world results with ease.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </a>
@@ -275,7 +258,6 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-
         {/* Background gradient bottom */}
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -296,16 +278,16 @@ export default function LandingPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           {/* Section Header */}
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">
+            <h2 className="text-base font-semibold leading-7 text-green-600">
               Our Services
             </h2>
             <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
               Everything you need to grow your business
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              From data analytics to custom development, we provide
-              comprehensive solutions to help your business thrive in the
-              digital landscape.
+              From strategic placement to performance reporting, we provide
+              turnkey billboard advertising solutions to help your business
+              stand out in high-traffic areas.
             </p>
           </div>
 
@@ -333,7 +315,7 @@ export default function LandingPage() {
                     {/* CTA Link */}
                     <a
                       href="#"
-                      className="inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-500 group-hover:translate-x-1 transition-transform duration-200"
+                      className="inline-flex items-center text-sm font-semibold text-green-600 hover:text-green-500 group-hover:translate-x-1 transition-transform duration-200"
                     >
                       Learn more
                       <svg
@@ -361,22 +343,23 @@ export default function LandingPage() {
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div className="lg:pt-4 lg:pr-8">
                   <div className="lg:max-w-lg">
-                    <h2 className="text-base/7 font-semibold text-indigo-600">
-                      Deploy faster
+                    <h2 className="text-base/7 font-semibold text-green-600">
+                      Advertise smarter
                     </h2>
                     <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-                      A better workflow
+                      A simpler way to advertise outdoors
                     </p>
                     <p className="mt-6 text-lg/8 text-gray-600">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
+                      Skip the hassle of traditional ad buying. Our platform
+                      makes planning, launching, and managing your billboard
+                      campaigns fast and easy — whether you’re a small business
+                      or a growing brand.
                     </p>
                     <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                       <div className="relative pl-9">
                         <dt className="inline font-semibold text-gray-900">
                           <svg
-                            className="absolute top-1 left-1 size-5 text-indigo-600"
+                            className="absolute top-1 left-1 size-5 text-green-600"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                             aria-hidden="true"
@@ -388,18 +371,18 @@ export default function LandingPage() {
                               clip-rule="evenodd"
                             />
                           </svg>
-                          Push to deploy.
+                          Quick Campaign Launch.
                         </dt>
                         <dd className="inline">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit. Maiores impedit perferendis suscipit eaque, iste
-                          dolor cupiditate blanditiis ratione.
+                          Launch your billboard ad in just a few clicks. Choose
+                          your location, upload your design, and schedule your
+                          campaign — all from one dashboard.
                         </dd>
                       </div>
                       <div className="relative pl-9">
                         <dt className="inline font-semibold text-gray-900">
                           <svg
-                            className="absolute top-1 left-1 size-5 text-indigo-600"
+                            className="absolute top-1 left-1 size-5 text-green-600"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                             aria-hidden="true"
@@ -411,17 +394,18 @@ export default function LandingPage() {
                               clip-rule="evenodd"
                             />
                           </svg>
-                          SSL certificates.
+                          Guaranteed Visibility.
                         </dt>
                         <dd className="inline">
-                          Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                          irure qui lorem cupidatat commodo.
+                          We ensure your billboard ad gets prime exposure with
+                          real-time scheduling and high-traffic location
+                          monitoring.
                         </dd>
                       </div>
                       <div className="relative pl-9">
                         <dt className="inline font-semibold text-gray-900">
                           <svg
-                            className="absolute top-1 left-1 size-5 text-indigo-600"
+                            className="absolute top-1 left-1 size-5 text-green-600"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                             aria-hidden="true"
@@ -434,18 +418,19 @@ export default function LandingPage() {
                               clip-rule="evenodd"
                             />
                           </svg>
-                          Database backups.
+                          Performance Tracking.
                         </dt>
                         <dd className="inline">
-                          Ac tincidunt sapien vehicula erat auctor pellentesque
-                          rhoncus. Et magna sit morbi lobortis.
+                          Track impressions and estimated reach throughout your
+                          campaign. Get automated reports to measure brand
+                          impact.
                         </dd>
                       </div>
                     </dl>
                   </div>
                 </div>
                 <img
-                  src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+                  src="billboard-on-tropical-city-background-2025-03-15-23-52-22-utc.jpg"
                   alt="Product screenshot"
                   className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0"
                   width="2432"
@@ -457,7 +442,7 @@ export default function LandingPage() {
 
           {/* CTA Section */}
           <div className="mx-auto mt-16 max-w-2xl text-center sm:mt-20">
-            <div className="rounded-2xl bg-indigo-600 px-8 py-12 shadow-lg">
+            <div className="rounded-2xl bg-green-600 px-8 py-12 shadow-lg">
               <h3 className="text-2xl font-semibold text-white mb-4">
                 Ready to get started?
               </h3>
@@ -468,7 +453,7 @@ export default function LandingPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="#"
-                  className="rounded-md bg-white px-6 py-3 text-base font-semibold text-indigo-600 shadow-sm hover:bg-gray-50 transition-colors"
+                  className="rounded-md bg-white px-6 py-3 text-base font-semibold text-green-600 shadow-sm hover:bg-gray-50 transition-colors"
                 >
                   Start free trial
                 </a>
